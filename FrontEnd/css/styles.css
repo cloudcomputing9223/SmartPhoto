@@ -1,0 +1,205 @@
+html {
+  height: 100%;
+}
+
+
+body {
+  background: #536475;
+  font-family: serif;
+  
+  p {
+    line-height: 1.2;
+    letter-spacing: .2px;
+    font-size: 15px;
+  }
+}
+
+
+
+
+.box-container {
+  margin: 80px auto;
+  width: 80%;
+  height: 500px;
+  display: flex;
+  
+  box-shadow: 3px 3px 3px 5px rgba(1,1,1,0.2);
+  
+
+}
+
+.box1-content,
+.box1-side,
+.box2-content,
+.box2-side {
+  transition: all .3s ease-out;
+  color: darkslategray;
+  overflow: hidden;
+}
+
+ .content {
+   h1, p {
+     opacity: 0;
+     transform: translateY(50px);
+   }
+   &.text-in {
+     h1, p {
+       opacity: 1;
+       transform: translateY(0);
+     }
+   }
+ }
+
+.box1-side,
+.box2-side {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.box1-content {
+  background: whitesmoke;
+  flex: 4;
+  padding: 30px 40px;
+}
+
+.box1-side {
+  width: 50px;
+  background: #bac6d2;
+  flex: 2;
+}
+
+.box2-side {
+  background: #a6bdbd;
+  flex: 0;
+}
+
+.box2-content {
+  background: whitesmoke;
+  flex: 0;
+  // opacity: 0;
+}
+
+button {
+  background: #11526b;
+  padding: 10px 50px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);
+  color: white;
+  margin: 30px 0;
+    
+  cursor: pointer;
+  display: block;
+  height: 50px;
+  left: 0;
+  position: relative;
+  top: 0;
+  font-size: 1.0em;
+  font-weight: 400;
+}
+
+.btn {
+  background: #11526b;
+  padding: 10px 50px;
+  border-radius: 7.5px;
+  color: white;
+  border: none;
+  box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.32);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  display: grid;
+  grid-template-areas:
+          'controller view view view view view view view view view view view';
+  grid-gap: 2px;
+  background-color: #dddddd;
+  padding: 2px;
+}
+
+.container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* my own */
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  margin: 30px 0;
+  color: white;
+}
+
+.controller {
+  grid-area: controller;
+}
+
+.view {
+  width: 50%;
+  background: #bac6d2;
+  grid-area: view;
+}
+
+.form-info {
+  width: 100%;
+  position: relative;
+  font-size: 16px;
+}
+
+.controller-label {
+  font-size: 20px;
+  text-align: left;
+  margin: 50px 0 0 20px;
+}
+
+.view-label {
+  text-align: center;
+  position:relative;
+  font-size: 20px;
+  margin: 0 0 0 30px;
+}
+
+.photos {
+  list-style: none;
+/*  margin-right: 40px;*/
+}
+
+.ON {
+  background-color: aquamarine;
+}
+
+#uploadPhoto {
+  padding: 15px 0;
+}
+
+#searchPhoto {
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+
+#searchRequest {
+  width: 70%;
+  float: left;
+  margin-left: 20px;
+  padding-left: 10px;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #aaaaaa;
+}
+
